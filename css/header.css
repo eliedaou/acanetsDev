@@ -2,7 +2,7 @@
 
 #logo {
   position: relative;
-  height: 30px;
+  height:30px;
   width: 183px;
   margin: 0 auto;
   padding-top: 8px;
@@ -10,11 +10,11 @@
 
 #logo a {
   display: block;
-  height: 30px;
+  height:30px;
   width: 183px;
   text-indent: -999px;
   overflow: hidden;
-  background: url('../img/gh-training-logo-1x.png') no-repeat;
+  background: url('../img/fixme.png') no-repeat;
 
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
   filter: alpha(opacity=70);
