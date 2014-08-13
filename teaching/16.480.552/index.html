@@ -1,0 +1,92 @@
+---
+layout: teaching
+subpage: 16.480.552
+prerequisites: 16.311 Electronics I Lab, 16.317 Microprocessor Sys Desgn I, and 16.365 Electronics I.
+---
+
+<div class="golden-large">
+  <div class="content">
+    <h3>16.480/552 Microprocessor Systems Design II and Embedded Systems</h3>
+    <p>Description: This course is a continuation of 16.317. This course covers CPU architecture, memory interfaces and management, coprocessor interfaces, bus concepts, bus arbitration techniques, serial I/O devices, DMA, interrupt control devices. Including Design, construction, and testing of dedicated microprocessor systems (static and real-time). It includes topics on micro-controllers, programming for small systems, interfacing, communications, validating hardware and software, microprogramming of controller chips, design methods and testing of embedded systems.</p>
+
+<p>Credits: 3 </p>
+
+<p>Pre/Co-Requisites: 16.311 Electronics I Lab, 16.317 Microprocessor Sys Desgn I, and 16.365 Electronics I.</p>
+
+    <div class="container">
+      <div class="half">
+        <h4>Course Syllabus</h4>
+	<p class="register">
+          <a href="{{ class.syllabus_url }}" class="button">Get Syllabus Now</a>
+        </p>
+      </div>
+    </div>
+
+    <!--div class="container">
+      <div class="half">
+        <h4>Topics</h4>
+        <ul>
+          <li>
+	  Microprocessor Software Architecture: Data formats, types, and alignment.
+Memory addressing and organization. Stack operation.</li>
+          <li>Microprocessor Instructions: Instruction formats and
+      types: data transfer, arithmetic, logical, shift/rotate,
+      conditional execution, program control, subroutines. </li>
+          <li>Assembly Language Programming: Ability to write, modify, and debug programs written in assembly language. Translation of high-level code to assembly language. Programs that integrate assembly and high-level code.</li>
+          <li>Microprocessor Interfacing: Memory and I/O interfacing. Bus cycles.</li>
+          <li>Interrupt Processing: Hardware and software interrupts.</li>
+          <li>Microcontroller-based Systems: Microcontroller architecture and instruction set. Microcontroller programming using both assembly language and high-level code. Design and debug microcontroller-based circuits.</li>
+
+        </ul>
+      </div>
+    </div-->
+
+
+  </div>
+</div>
+<div class="golden-small">
+  <div class="content">
+    <h4>Upcoming Due Dates</h4>
+    <ul class="resource-list class-list">
+      {% for class in site.tags.16-317-hw reversed %}
+        <li class="resource class small-class">
+          <div class="summary">
+            <!--div class="actions">
+              <p class="register">
+                <a href="{{ class.registration_url }}" class="button">Register Now</a>
+              </p>
+            </div-->
+            <h4>{{ class.title }}</h4>
+            <p>
+            </p>
+            <div class="description">
+              <p class="register">
+                <a href="{{ class.hw_url }}" class="button">Review Now</a>
+              </p>
+            </div>
+          </div>
+          <div class="details">
+            <span class="date">
+              <img src="{{ site.url }}/img/icon-calendar.png" width="16px" height="16px" class="icon">
+              {{ class.the_date }}
+            </span>
+            <span class="time">
+              <img src="{{ site.url }}/img/icon-clock.png" width="16px" height="16px" class="icon">
+              {{ class.start_time }}
+              {% if class.end_time %} to {{ class.end_time }}{% endif %}
+              {% if class.timezone %}(<a href="{{ class.timezonelink }}">{{ class.timezone }}</a>){% endif %}
+            </span>
+          </div>
+        </li>
+      {% endfor %}
+      {% if site.tags.web-foundations[0] == null %}
+        <p>There are no scheduled web-based foundation classes at this time. Stay tuned for updates!</p>
+      {% endif %}
+    </ul>
+    <!--p>Private group events are available. Please <a href="{{ site.url }}/contact/">contact us</a> for more information.</p-->
+    {% if page.prerequisites %}
+      <h4>Prerequisites</h4>
+      <p>{{ page.prerequisites }}</p>
+    {% endif %}
+  </div>
+</div>
