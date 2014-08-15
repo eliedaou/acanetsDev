@@ -6,7 +6,7 @@ prerequisites: 16.311 Electronics I Lab, 16.317 Microprocessor Sys Desgn I, and 
 
 <div class="golden-large">
   <div class="content">
-    <h3>16.480/552 Microprocessor Systems Design II and Embedded Systems</h3>
+    <h3>16.480/552 Microprocessors II and Embedded System Design</h3>
     <p>This three-credit course provides a continuation of the study
     of microprocessors begun in 16.317. Topics include CPU
     architecture, memory interfaces and management, coprocessor
@@ -26,6 +26,8 @@ prerequisites: 16.311 Electronics I Lab, 16.317 Microprocessor Sys Desgn I, and 
 
 <p>Pre/Co-Requisites: 16.311 Electronics I Lab, 16.317 Microprocessor Sys Desgn I, and 16.365 Electronics I.</p>
 
+
+{% for class in site.tags.16-480-552 reversed %}
     <div class="container">
       <div class="half">
         <h4>Course Syllabus</h4>
@@ -34,6 +36,16 @@ prerequisites: 16.311 Electronics I Lab, 16.317 Microprocessor Sys Desgn I, and 
         </p>
       </div>
     </div>
+
+    <div class="container">
+      <div class="half">
+        <h4>Course Piazza Forum</h4>
+	<p class="register">
+          <a href="{{ class.piazza_url }}" class="button">Got to Piazza.com</a>
+        </p>
+      </div>
+    </div>
+{% endfor %}
 
     <!--div class="container">
       <div class="half">
