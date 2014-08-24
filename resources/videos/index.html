@@ -6,8 +6,8 @@ subpage: videos
 <div class="container">
   <div class="content">
     <div class="section-description">
-      <h3>Git Videos</h3>
-      <p>The GitHub:Training team has produced several free educational webcasts and screencasts on using the features of GitHub and Git. We've additionally listed some of our preferred commercial videos that are generally long-form and more comprehensive in nature.</p>
+      <h3>Recorded Lectures</h3>
+      <p>Recorded lectures provide students a flexible pace to learn and review. These videos are updated and edited regularly. </p>
     </div>
     <ul class="resource-list video-list">
       {% for video in site.categories.videos %}
@@ -15,7 +15,8 @@ subpage: videos
           <div class="container">
             <div class="third">
               <a href="{{ video.the_url }}">
-                <img src="assets/{{ video.image_filename }}" alt="{{ video.title }}">
+                <!--img src="assets/{{ video.image_filename }}" alt="{{ video.title }}"-->
+		{{ video.the_frame }}
               </a>
             </div>
             <div class="two-thirds">

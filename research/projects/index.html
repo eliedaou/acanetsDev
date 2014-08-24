@@ -1,0 +1,31 @@
+---
+layout: research
+subpage: projects
+---
+
+<div class="container">
+  <div class="content">
+    <div class="section-description">
+      <h3>Overview of Research</h3>
+      <p> The laboratory of Advanced Computing and Networking Systems (ACANETS) was founded by Dr. Yan Luo in 2005. The research at ACANETS spans broadly on advanced computer architectures and network systems that facilitate high speed networking, embedded intelligence and data-intensive science discoveries. The research outcomes from the team include the first open source network processor based OpenFlow switch, deep packet inspection NetFPGA engine, programmable flow classification systems, and so on. The ACANETS Lab has been supported by the National Science Foundation, Intel, Altera, Xilinx, Netronome and Extreme Networks. Please check out the project descriptions and our <a href="{{ site.url }}/research/publications"> publications</a>. </p>   
+    </div>
+    <div>
+      <ul class="resource-list video-list">
+      {% for project in site.tags.projects %}
+        <li class="resource video">
+          <div class="container">
+            <div class="third">
+              <a href="{{ project.the_url }}">
+                <img src="assets/{{ project.image_filename }}" alt="{{ project.the_title }}">
+              </a>
+            </div>
+            <div class="two-thirds">
+              <h4><a href="{{ project.the_url }}">{{ project.the_description }}</a></h4>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,11 +1,11 @@
-gauges_id: 50235916613f5d4f9c000042
-google_analytics_id: UA-3769691-19
+gauges_id: 
+google_analytics_id: 
 
 # For Atom Feed
-domain: training.github.com
-author: GitHub Training Team
-email: training@github.com
-title: GitHub Training
+domain: yanluo.github.io
+author: Yan Luo
+email: yan_luo@uml.edu
+title: Yan Luo Web
 
 # standard jekyll configuration
 
@@ -26,7 +26,7 @@ exclude:
 markdown: rdiscount
 
 github:
-  username: github/training.github.com
+  username: yanluo/github.com
 
 disqus:
-  id: githubteachingmaterials
+  id: yanluo
