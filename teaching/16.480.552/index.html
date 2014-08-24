@@ -32,7 +32,7 @@ prerequisites: 16.311 Electronics I Lab, 16.317 Microprocessor Sys Desgn I, and 
       <div class="half">
         <h4>Course Syllabus</h4>
 	<p class="register">
-          <a href="{{ class.syllabus_url }}" class="button">Get Syllabus Now</a>
+          <a href="{{ class.syllabus_pdf }}" >Get Syllabus Now</a>
         </p>
       </div>
     </div>
@@ -73,7 +73,7 @@ Memory addressing and organization. Stack operation.</li>
   <div class="content">
     <h4>Upcoming Due Dates</h4>
     <ul class="resource-list class-list">
-      {% for class in site.tags.16-317-hw reversed %}
+      {% for class in site.tags.16-480-552-due reversed %}
         <li class="resource class small-class">
           <div class="summary">
             <!--div class="actions">
@@ -84,11 +84,11 @@ Memory addressing and organization. Stack operation.</li>
             <h4>{{ class.title }}</h4>
             <p>
             </p>
-            <div class="description">
+            <!--div class="description">
               <p class="register">
                 <a href="{{ class.hw_url }}" class="button">Review Now</a>
               </p>
-            </div>
+            </div-->
           </div>
           <div class="details">
             <span class="date">
@@ -109,9 +109,9 @@ Memory addressing and organization. Stack operation.</li>
       {% endif %}
     </ul>
     <!--p>Private group events are available. Please <a href="{{ site.url }}/contact/">contact us</a> for more information.</p-->
-    {% if page.prerequisites %}
+    <!--{% if page.prerequisites %}
       <h4>Prerequisites</h4>
       <p>{{ page.prerequisites }}</p>
-    {% endif %}
+    {% endif %} -->
   </div>
 </div>
