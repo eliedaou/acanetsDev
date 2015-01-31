@@ -22,11 +22,11 @@ prerequisites: 16.311 Electronics I Lab, 16.317 Microprocessor Sys Desgn I, and 
     microprocessor functions and embedded system designs.
 </p>
 
-<p>Credits: 3 </p>
-
-<p>Pre/Co-Requisites: 16.311 Electronics I Lab, 16.317 Microprocessor Sys Desgn I, and 16.365 Electronics I.</p>
-
-
+This course introduces the theory and practice of embedded system design
+using the state-of-the-art hardware development systems and software tools.
+The lab components are redesigned to leverage Intel Galileo development boards,
+donated by Intel Corporation.
+<!--
 {% for class in site.tags.16-480-552 reversed %}
     <div class="container">
       <div class="half">
@@ -46,7 +46,7 @@ prerequisites: 16.311 Electronics I Lab, 16.317 Microprocessor Sys Desgn I, and 
       </div>
     </div>
 {% endfor %}
-
+-->
     <!--div class="container">
       <div class="half">
         <h4>Topics</h4>
@@ -69,49 +69,58 @@ Memory addressing and organization. Stack operation.</li>
 
   </div>
 </div>
+
 <div class="golden-small">
   <div class="content">
-    <h4>Upcoming Due Dates</h4>
+    <h4>Credits: 3</h4> 
+    <h4>Pre/Co-Requisites</h4> 16.311 Electronics I Lab, 16.317 Microprocessor Sys Desgn I, and 16.365 Electronics I.
+    {% for class in site.tags.16-480-552 reversed %}
+    <h4>Course Syllabus</h4>  <a href="{{ class.syllabus_pdf }}" >Get Syllabus Now</a>
+     <h4>Course Piazza Forum</h4> <p>
+      <a href="{{ class.piazza_url }}" class="button">Go to Piazza.com</a> </p>
+     <h4>Course Github Repos</h4> <p>
+      <a href="{{ class.github_url }}" class="button">Go to Github.com</a> </p>
+    {% endfor %}
+    <!--h4>Upcoming Due Dates</h4>
     <ul class="resource-list class-list">
       {% for class in site.tags.16-480-552-due reversed %}
         <li class="resource class small-class">
           <div class="summary">
-            <!--div class="actions">
-              <p class="register">
-                <a href="{{ class.registration_url }}" class="button">Register Now</a>
-              </p>
-            </div-->
             <h4>{{ class.title }}</h4>
-            <p>
-            </p>
-            <!--div class="description">
-              <p class="register">
-                <a href="{{ class.hw_url }}" class="button">Review Now</a>
-              </p>
-            </div-->
           </div>
           <div class="details">
             <span class="date">
               <img src="{{ site.url }}/img/icon-calendar.png" width="16px" height="16px" class="icon">
               {{ class.the_date }}
             </span>
-            <!--span class="time">
-              <img src="{{ site.url }}/img/icon-clock.png" width="16px" height="16px" class="icon">
-              {{ class.start_time }}
-              {% if class.end_time %} to {{ class.end_time }}{% endif %}
-              {% if class.timezone %}(<a href="{{ class.timezonelink }}">{{ class.timezone }}</a>){% endif %}
-            </span-->
           </div>
         </li>
       {% endfor %}
       {% if site.tags.web-foundations[0] == null %}
         <p>There are no scheduled web-based foundation classes at this time. Stay tuned for updates!</p>
       {% endif %}
-    </ul>
-    <!--p>Private group events are available. Please <a href="{{ site.url }}/contact/">contact us</a> for more information.</p-->
-    <!--{% if page.prerequisites %}
-      <h4>Prerequisites</h4>
-      <p>{{ page.prerequisites }}</p>
-    {% endif %} -->
+    </ul-->
   </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <h4>Topics</h4>
+    <ul>
+      <li> Introduction of Embedded System Design and Methodologies
+      <li> Sensors and Analog Digital Conversion
+      <li> Interfaces and Buses, I2C
+      <li> Memory Organization and Interfacing
+      <li> Direct Memroy Access, PCIe, and Interrupt
+      <li> Linux and Device Drivers
+      <li> Multicore and Parallel Programming
+      <li> Emerging Technologies (Wireless Sensor Network, Internet of Things, etc.)
+    </ul> 
+  </div>
+
+  <div class="content">
+    <h4>Acknowledgement</h4>
+    The redesign of this course is made possible in part due to the generous support from Intel Corporation.
+  </div>
+
 </div>
