@@ -29,7 +29,7 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
   #logo a {
-    background: url('../img/gh-training-logo-2x.png') no-repeat;
+    background: url('../img/grad_white.png') no-repeat;
     background-size: 183px 30px;
   }
 }
