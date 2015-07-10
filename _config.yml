@@ -31,6 +31,9 @@ github:
 disqus:
   id: yanluo
 
+# yluo
+url: http://acanets.uml.edu/~yluo
+
 #
 # This file configures the New Relic Agent.  New Relic monitors Ruby, Java,
 # .NET, PHP, Python and Node applications with deep visibility and low
