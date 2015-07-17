@@ -13,7 +13,7 @@ body_class: people
     </div>
 
     <ul class="resource-list video-list">
-      {% for people in site.tags.people.professor %}
+      {% for people in site.tags.professor %}
       <li class="resource video">
         <div class="container">
           <div class="third">
@@ -22,7 +22,7 @@ body_class: people
             </a>
           </div>
           <div class="two-thirds">
-            <h4><a href="{{ project.the_url }}">{{ professor.the_description }}</a></h4>
+            <h4><!--a href="{{ project.the_url }}"-->{{ professor.the_description }}<!--/a--></h4>
           </div>
         </div>
       </li>
@@ -30,7 +30,7 @@ body_class: people
     </ul>
 
     <ul class="resource-list video-list">
-      {% for people in site.tags.people.PHdStudent %}
+      {% for people in site.tags.PHdStudent %}
       <li class="resource video">
         <div class="container">
           <div class="third">
@@ -39,7 +39,7 @@ body_class: people
             </a>
           </div>
           <div class="two-thirds">
-            <h4><a href="{{ project.the_url }}">{{ PHdStudent.the_description }}</a></h4>
+            <h4><!--a href="{{ project.the_url }}"-->{{ PHdStudent.the_description }}<!--/a--></h4>
           </div>
         </div>
       </li>
@@ -56,7 +56,7 @@ body_class: people
             </a>
           </div>
           <div class="two-thirds">
-            <h4><a href="{{ project.the_url }}">{{ project.the_description }}</a></h4>
+            <h4><!--a href="{{ people.the_url }}"-->{{ people.the_description }}<!--/a--></h4>
           </div>
         </div>
       </li>
