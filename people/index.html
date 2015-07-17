@@ -1,5 +1,5 @@
 ---
-layout: research
+layout: people
 body_class: people
 ---
 
@@ -8,9 +8,43 @@ body_class: people
 <div class="container">
   <div class="content">
     <div class="section-description">
-      <h3>Test</h3>
-      <p>More testing</p>
+      <h3>People</h3>
+      <p>We are these people</p>
     </div>
+
+    <ul class="resource-list video-list">
+      {% for people in site.tags.professor %}
+      <li class="resource video">
+        <div class="container">
+          <div class="third">
+            <a href="{{ people.whoAmI }}">
+              <img src="assets/{{ professor.image_filename }}" alt="{{ professor.myName }}">
+            </a>
+          </div>
+          <div class="two-thirds">
+            <h4><a href="{{ project.the_url }}">{{ professor.the_description }}</a></h4>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <ul class="resource-list video-list">
+      {% for people in site.tags.PHdStudent %}
+      <li class="resource video">
+        <div class="container">
+          <div class="third">
+            <a href="{{ people.whoAmI }}">
+              <img src="assets/{{ PHdStudent.image_filename }}" alt="{{ PHdStudent.myName }}">
+            </a>
+          </div>
+          <div class="two-thirds">
+            <h4><a href="{{ project.the_url }}">{{ PHdStudent.the_description }}</a></h4>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
 
     <ul class="resource-list video-list">
     {% for project in site.tags.projects %}
