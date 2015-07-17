@@ -1,0 +1,32 @@
+---
+layout: research
+body_class: people
+---
+
+
+
+<div class="container">
+  <div class="content">
+    <div class="section-description">
+      <h3>Test</h3>
+      <p>More testing</p>
+    </div>
+
+    <ul class="resource-list video-list">
+    {% for project in site.tags.projects %}
+      <li class="resource video">
+        <div class="container">
+          <div class="third">
+            <a href="{{ project.the_url }}">
+              <img src="assets/{{ project.image_filename }}" alt="{{ project.the_title }}">
+            </a>
+          </div>
+          <div class="two-thirds">
+            <h4><a href="{{ project.the_url }}">{{ project.the_description }}</a></h4>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>

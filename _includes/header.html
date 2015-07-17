@@ -1,28 +1,22 @@
 <div class="top-bar">&nbsp;</div>
 <header>
   <div class="container">
-    <h1 id="logo" class="content">
-      <a href="{{ site.url }}/" data-escp="">Dr. Yan Luo's Web Site</a>
-    </h1>
     <nav id="nav">
       <ul class="content">
         <li{% if page.body_class == 'overview' %} class="current"{% endif %}>
           <a href="{{ site.url }}/">About</a>
         </li>
-        <li{% if page.body_class == 'trainers' %} class="current"{% endif %}>
+        <li{% if page.body_class == 'overview' %} class="current"{% endif %}>
           <a href="{{ site.url }}/research/">Research</a>
         </li>
-        <li{% if page.body_class == 'teaching' %} class="current"{% endif %}>
-          <a href="{{ site.url }}/teaching/">Teaching</a>
+        <li{% if page.body_class == 'overview' %} class="current"{% endif %}>
+          <a href="{{ site.url }}/research/publications/">Publications</a>
         </li>
-        <li{% if page.body_class == 'in-person' %} class="current"{% endif %}>
-          <a href="{{ site.url }}/service/">Service</a>
+        <li{% if page.body_class == 'people' %} class="current"{% endif %}>
+          <a href="{{ site.url }}/people/">People</a>
         </li>
-        <li{% if page.body_class == 'resources' %} class="current"{% endif %}>
-          <a href="{{ site.url }}/resources/">Resources</a>
-        </li>
-        <li{% if page.body_class == 'contact' %} class="current"{% endif %}>
-          <a href="{{ site.url }}/contact/">Contact</a>
+        <li{% if page.body_class == 'overview' %} class="current"{% endif %}>
+          <a href="/~yluo/contact/" target="_blank">Contact</a>
         </li>
       </ul>
     </nav>

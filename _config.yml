@@ -1,11 +1,11 @@
-gauges_id: 
-google_analytics_id: 
+gauges_id:
+google_analytics_id:
 
 # For Atom Feed
-domain: yanluo.github.io
-author: Yan Luo
-email: yan_luo@uml.edu
-title: Yan Luo Web
+domain: acanets.uml.edu
+author: Elie Daou
+email: elie_daou@student.uml.edu
+title: Acanets Web
 
 # standard jekyll configuration
 
@@ -29,10 +29,10 @@ github:
   username: yanluo/github.com
 
 disqus:
-  id: yanluo
+  id: Acanets
 
 # yluo
-url: /~yluo
+url: /~edaou
 
 #
 # This file configures the New Relic Agent.  New Relic monitors Ruby, Java,
