@@ -22,6 +22,8 @@ body_class: people
             </a>
           </div>
           <div class="two-thirds">
+            <h2> {{ professor.myName}}</h2>
+            <br />
             <h4><!--a href="{{ project.the_url }}"-->{{ professor.the_description }}<!--/a--></h4>
           </div>
         </div>
@@ -34,11 +36,13 @@ body_class: people
       <li class="resource video">
         <div class="container">
           <div class="third">
-            <a href="{{ people.whoAmI }}">
+            <a href="{{ PHdStudent.whoAmI }}">
               <img src="assets/{{ PHdStudent.image_filename }}" alt="{{ PHdStudent.myName }}">
             </a>
           </div>
           <div class="two-thirds">
+            <h2> {{ PHdStudent.myName}}</h2>
+            <br />
             <h4><!--a href="{{ project.the_url }}"-->{{ PHdStudent.the_description }}<!--/a--></h4>
           </div>
         </div>
@@ -51,11 +55,13 @@ body_class: people
       <li class="resource video">
         <div class="container">
           <div class="third">
-            <a href="{{ project.the_url }}">
-              <img src="assets/{{ project.image_filename }}" alt="{{ project.the_title }}">
+            <a href="{{ people.whoAmI }}">
+              <img src="assets/{{ people.image_filename }}" alt="{{ people.myName }}">
             </a>
           </div>
           <div class="two-thirds">
+            <h2> {{ people.myName}}</h2>
+            <br />
             <h4><!--a href="{{ people.the_url }}"-->{{ people.the_description }}<!--/a--></h4>
           </div>
         </div>
