@@ -12,8 +12,8 @@ body_class: people
       <p>We are these people</p>
     </div>
 
-    {% for professor in site.category.professors %}
-      test
+    {% for professor in site.categories.professors %}
+      test {{ professor.myName }}
     {% endfor %}
 
     <!-- ul class="resource-list video-list">
