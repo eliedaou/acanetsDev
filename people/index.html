@@ -16,6 +16,7 @@ body_class: people
       test {{ professor.myName }}
     {% endfor %}
 
+    <!-- professor stuff -->
     <ul class="resource-list video-list">
       {% for professor in site.categories.professors %}
       <li class="resource video">
@@ -35,9 +36,9 @@ body_class: people
       {% endfor %}
     </ul>
 
-
+    <!-- phdstudent stuff -->
     <ul class="resource-list video-list">
-      {% for phdstudent in site.categories.PHdStudents %}
+      {% for phdstudent in site.categories.phdstudents %}
       <li class="resource video">
         <div class="container">
           <div class="third">
@@ -55,6 +56,7 @@ body_class: people
       {% endfor %}
     </ul>
 
+    <!-- regular student stuff -->
     <ul class="resource-list video-list">
     {% for student in site.categories.students %}
       <li class="resource video">
