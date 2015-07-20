@@ -26,13 +26,17 @@ exclude:
 markdown: rdiscount
 
 github:
-  username: yanluo/github.com
+  username: eliedaou/github.com
 
 disqus:
   id: Acanets
 
-# yluo
+# edaou
 url: /~edaou
+
+#veriables?
+myName:
+  
 
 #
 # This file configures the New Relic Agent.  New Relic monitors Ruby, Java,
