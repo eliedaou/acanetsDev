@@ -13,7 +13,7 @@ body_class: people
     </div>
 
     <ul class="resource-list video-list">
-      {% for professor in site.tags.professor %}
+      {% for professor in site.data %}
       <li class="resource video">
         <div class="container">
           <div class="third">
@@ -24,14 +24,14 @@ body_class: people
           <div class="two-thirds">
             <h2> {{ professor.myName}}</h2>
             <br />
-            <h4><!--a href="{{ project.the_url }}"-->{{ professor.the_description }}<!--/a--></h4>
+            <h4><a href="{{ project.the_url }}">{{ professor.the_description }}</a></h4>
           </div>
         </div>
       </li>
       {% endfor %}
     </ul>
 
-    <ul class="resource-list video-list">
+    <!-- <ul class="resource-list video-list">
       {% for PHdStudent in site.tags.PHdStudent %}
       <li class="resource video">
         <div class="container">
@@ -43,7 +43,7 @@ body_class: people
           <div class="two-thirds">
             <h2> {{ PHdStudent.myName}}</h2>
             <br />
-            <h4><!--a href="{{ project.the_url }}"-->{{ PHdStudent.the_description }}<!--/a--></h4>
+            <h4><a href="{{ project.the_url }}">{{ PHdStudent.the_description }}</a></h4>
           </div>
         </div>
       </li>
@@ -62,11 +62,11 @@ body_class: people
           <div class="two-thirds">
             <h2> {{ people.myName}}</h2>
             <br />
-            <h4><!--a href="{{ people.the_url }}"-->{{ people.the_description }}<!--/a--></h4>
+            <h4><a href="{{ people.the_url }}"{{ people.the_description }}</a></h4>
           </div>
         </div>
       </li>
     {% endfor %}
-    </ul>
+    </ul> -->
   </div>
 </div>
