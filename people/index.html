@@ -17,7 +17,7 @@ body_class: people
       <li class="resource video">
         <div class="container">
           <div class="third">
-            <a href="{{ people.whoAmI }}">
+            <a href="{{ professor.whoAmI }}">
               <img src="assets/{{ professor.image_filename }}" alt="{{ professor.myName }}">
             </a>
           </div>
@@ -32,7 +32,7 @@ body_class: people
     </ul>
 
     <ul class="resource-list video-list">
-      {% for people in site.tags.PHdStudent %}
+      {% for PHdStudent in site.tags.PHdStudent %}
       <li class="resource video">
         <div class="container">
           <div class="third">
@@ -51,7 +51,7 @@ body_class: people
     </ul>
 
     <ul class="resource-list video-list">
-    {% for project in site.tags.people %}
+    {% for people in site.tags.people %}
       <li class="resource video">
         <div class="container">
           <div class="third">
