@@ -12,24 +12,32 @@ body_class: people
       <p>We are these people</p>
     </div>
 
-    <ul class="resource-list video-list">
+    {% for professor in site.categories.professors %}
+      <ul>
+        <li> Hi </li>
+        <li> {{ professor.the_description }} </li>
+
+
+    {% endfor %}
+
+    <!-- <ul class="resource-list video-list">
       {% for professor in site.categories.professors %}
       <li class="resource video">
         <div class="container">
           <div class="third">
             <a href="{{ professor.whoAmI }}">
-              <img src="assets/{{ professor.image_filename }}" alt="{{ professor.myName }}">
+              <img src="{{ site.url }}/img/{{ professor.image_filename }}" alt="{{ professor.myName }}">
             </a>
           </div>
           <div class="two-thirds">
-            <h2> {{ professor.myName}}</h2>
+            <h2> {{ professor.myName }}</h2>
             <br />
             <h4><a href="{{ professor.whoAmI}}">{{ professor.the_description }}</a></h4>
           </div>
         </div>
       </li>
       {% endfor %}
-    </ul>
+    </ul> -->
 
 
     <ul class="resource-list video-list">
@@ -38,7 +46,7 @@ body_class: people
         <div class="container">
           <div class="third">
             <a href="{{ PHdStudent.whoAmI }}">
-              <img src="assets/{{ PHdStudent.image_filename }}" alt="{{ PHdStudent.myName }}">
+              <img src="{{ site.url }}/img/{{ PHdStudent.image_filename }}" alt="{{ PHdStudent.myName }}">
             </a>
           </div>
           <div class="two-thirds">
@@ -57,7 +65,7 @@ body_class: people
         <div class="container">
           <div class="third">
             <a href="{{ student.whoAmI }}">
-              <img src="assets/{{ student.image_filename }}" alt="{{ student.myName }}">
+              <img src="{{ site.url }}/img/{{ student.image_filename }}" alt="{{ student.myName }}">
             </a>
           </div>
           <div class="two-thirds">
