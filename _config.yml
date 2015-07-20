@@ -34,9 +34,6 @@ disqus:
 # edaou
 url: /~edaou
 
-#veriables?
-myName:
-  
 
 #
 # This file configures the New Relic Agent.  New Relic monitors Ruby, Java,
