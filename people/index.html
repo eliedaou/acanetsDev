@@ -19,6 +19,7 @@ body_class: people
     <!-- professor stuff -->
     <ul class="resource-list video-list">
       {% for professor in site.categories.professors %}
+      <li> {{ professor }} </li>
       <li class="resource video">
         <div class="container">
           <div class="third">
@@ -59,7 +60,7 @@ body_class: people
     <!-- regular student stuff -->
     <ul class="resource-list video-list">
     {% for student in site.categories.students %}
-      <li class="resource video">
+      <li class=" half resource video">
         <div class="container">
           <div class="third">
             <a href="{{ student.whoAmI }}">
