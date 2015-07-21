@@ -43,7 +43,7 @@ body_class: people
               <img src="{{ site.url }}/img/{{ phdstudent.image_filename }}" alt="{{ phdstudent.title }}">
           </div>
           <div class="two-thirds">
-            <h3> {{ phdstudent.title}}</h3>
+            <h3> {{ phdstudent.title}} </h3>
             <p>hello</p>
           </div>
         </div>
@@ -52,20 +52,16 @@ body_class: people
     </ul>
 
     <!-- regular student stuff -->
-    <ul class="resource-list video-list">
+    <ul class="container resource-list video-list">
     {% for student in site.categories.students %}
-      <li class=" half resource video">
-        <div class="container">
+      <li class="half resource video">
           <div class="third">
-            <a href="{{ student.whoAmI }}">
               <img src="{{ site.url }}/img/{{ student.image_filename }}" alt="{{ student.myName }}">
-            </a>
           </div>
           <div class="two-thirds">
             <h3> {{ student.myName}}</h3>
-            <p>{{ student.the_description }}</p>
+            <p> Hello </p>
           </div>
-        </div>
       </li>
     {% endfor %}
   </ul>
