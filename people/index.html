@@ -13,7 +13,7 @@ body_class: people
     </div>
 
     {% for professor in site.categories.professors %}
-      test {{ professor }}
+      {{ professor }}
     {% endfor %}
 
     <!-- professor stuff -->
@@ -54,7 +54,7 @@ body_class: people
 
     <!-- regular student stuff -->
     <h2> Students </h2>
-    <ul class="container resource-list video-list">
+    <ul class="resource-list video-list">
     {% for student in site.categories.students %}
       <li class="half resource video" style="display:inline-table">
           <div class="third">
@@ -66,6 +66,6 @@ body_class: people
           </div>
       </li>
     {% endfor %}
-  </ul>
+    </ul>
   </div>
 </div>
