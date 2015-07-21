@@ -12,13 +12,13 @@ body_class: people
       <p>We are these people</p>
     </div>
 
-    {% for professor in site.categories.professors %}
+    <!-- {% for professor in site.categories.professors %}
       test {{ professor }}
-    {% endfor %}
+    {% endfor %} -->
 
     <!-- professor stuff -->
 
-    < ul class="resource-list video-list">
+    <ul class="resource-list video-list">
       {% for professor in site.categories.professors %}
       <li class="resource video">
         <div class="container">
@@ -26,9 +26,8 @@ body_class: people
               <img src="{{ site.url }}/img/{{ professor.image_filename }}" alt="{{ professor.title }}">
           </div>
           <div class="two-thirds">
-            <h2> {{ professor.title }}</h2>
-            <br />
-            <h4> Hello </h4>
+            <h3> {{ professor.title }}</h3>
+            <p> Hello </p>
           </div>
         </div>
       </li>
@@ -36,7 +35,7 @@ body_class: people
     </ul>
 
     <!-- phdstudent stuff -->
-    < ul class="resource-list video-list">
+    <ul class="resource-list video-list">
       {% for phdstudent in site.categories.phdstudents %}
       <li class="resource video">
         <div class="container">
@@ -44,9 +43,8 @@ body_class: people
               <img src="{{ site.url }}/img/{{ phdstudent.image_filename }}" alt="{{ phdstudent.title }}">
           </div>
           <div class="two-thirds">
-            <h2> {{ phdstudent.title}}</h2>
-            <br />
-            <h4><hello</h4>
+            <h3> {{ phdstudent.title}}</h3>
+            <p>hello</p>
           </div>
         </div>
       </li>
@@ -64,9 +62,8 @@ body_class: people
             </a>
           </div>
           <div class="two-thirds">
-            <h2> {{ student.myName}}</h2>
-            <br />
-            <h4><a href="{{ studentswhoAmI }}">{{ student.the_description }}</a></h4>
+            <h3> {{ student.myName}}</h3>
+            <p>{{ student.the_description }}</p>
           </div>
         </div>
       </li>
