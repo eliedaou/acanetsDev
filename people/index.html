@@ -54,7 +54,7 @@ body_class: people
     <!-- regular student stuff -->
     <ul class="container resource-list video-list">
     {% for student in site.categories.students %}
-      <li class="half resource video" style="display:inline-block">
+      <li class="half resource video" style="display:inline-table">
           <div class="third">
               <img src="{{ site.url }}/img/{{ student.image_filename }}" alt="{{ student.title }}">
           </div>
