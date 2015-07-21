@@ -12,12 +12,12 @@ body_class: people
       <p>We are these people</p>
     </div>
 
-    <!-- {% for professor in site.categories.professors %}
+    {% for professor in site.categories.professors %}
       test {{ professor }}
-    {% endfor %} -->
+    {% endfor %}
 
     <!-- professor stuff -->
-
+    <h2> Professor </h2>
     <ul class="resource-list video-list">
       {% for professor in site.categories.professors %}
       <li class="resource video">
@@ -35,6 +35,7 @@ body_class: people
     </ul>
 
     <!-- phdstudent stuff -->
+    <h2> PHd Students </h2>
     <ul class="resource-list video-list">
       {% for phdstudent in site.categories.phdstudents %}
       <li class="resource video">
@@ -52,6 +53,7 @@ body_class: people
     </ul>
 
     <!-- regular student stuff -->
+    <h2> Students </h2>
     <ul class="container resource-list video-list">
     {% for student in site.categories.students %}
       <li class="half resource video" style="display:inline-table">
