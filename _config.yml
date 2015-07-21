@@ -25,6 +25,10 @@ exclude:
 
 markdown: rdiscount
 
+#setting up highlighter
+highlighter: Pygments
+
+
 github:
   username: eliedaou/github.com
 
