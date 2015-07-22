@@ -5,8 +5,7 @@ byline: Student 2
 people_overview: false
 ---
 
-{% assign thisStudent = site.tags.student2%}
-
+{% for thisStudent in site.tags.student2 %}
 <div class="container">
   <div class="content">
     <div class="section-description">
@@ -17,3 +16,5 @@ people_overview: false
     </div>
   </div>
 </div>
+
+{{% endfor %}}

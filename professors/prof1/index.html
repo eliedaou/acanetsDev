@@ -5,8 +5,7 @@ byline: Professor1 Yan Luo
 people_overview: false
 ---
 
-{% assign thisProfessor = site.tags.professor1 %}
-
+{% for thisProfessor in site.tags.professor1 %}
 <div class="container">
   <div class="content">
     <div class="section-description">
@@ -17,3 +16,4 @@ people_overview: false
     </div>
   </div>
 </div>
+{{% endfor %}}

@@ -5,11 +5,7 @@ byline: PHd Student 1
 people_overview: false
 ---
 
-<p> hello </p>
-<p>{{ site.tags.phdstudent1 }}</p>
-<p>hello again</p>
-
-<!-- {% assign thisStudent = site.tags.phdstudent1 %}
+{% for thisStudent in site.tags.phdstudent1 %}
 
 <div class="container">
   <div class="content">
@@ -20,4 +16,5 @@ people_overview: false
       <p> {{ thisStudent.the_description }} </p>
     </div>
   </div>
-</div> -->
+</div>
+{{% endfor %}}
