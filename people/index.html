@@ -1,6 +1,7 @@
 ---
 layout: people
 body_class: people
+people_overview: true
 ---
 
 <div class="container">
@@ -50,13 +51,15 @@ body_class: people
     <h3> Students </h3>
     <ul class="resource-list video-list">
     {% for student in site.tags.students %}
-      <li class="half resource video" style="margin:0px 0px">
-          <div class="third">
-              <img src="{{ site.url }}/img/{{ student.image_filename }}" alt="{{ student.title }}">
-          </div>
-          <div class="two-thirds">
-            <h3><a href=" {{ student.myURL }} "> {{ student.name}} </a></h3>
-            <p> {{ student.the_description }} </p>
+      <li class="resource video">
+          <div class="half">
+            <div class="third">
+                <img src="{{ site.url }}/img/{{ student.image_filename }}" alt="{{ student.title }}">
+            </div>
+            <div class="two-thirds">
+              <h3><a href=" {{ student.myURL }} "> {{ student.name}} </a></h3>
+              <p> {{ student.the_description }} </p>
+            </div>
           </div>
       </li>
     {% endfor %}

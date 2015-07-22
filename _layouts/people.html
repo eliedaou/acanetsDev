@@ -8,6 +8,7 @@ html_title: The Crew
 <div class="container">
   {{ content }}
 
+  {% if people_overview != true %}
   <!-- go back button -->
   <div class="subpage-list">
     <ul>
@@ -19,4 +20,6 @@ html_title: The Crew
       </li>
     </ul>
   </div>
+  {% endif %}
+
 </div>
