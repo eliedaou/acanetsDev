@@ -31,7 +31,7 @@ github:
 disqus:
   id: Acanets
 
-pdfLink: {{ site.url }}/research/PDFs
+pdfLink: /~edaou/research/PDFs
 # edaou
 url: /~edaou
 
