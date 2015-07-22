@@ -1,5 +1,5 @@
 ---
-image_filename: hero-2.jpg
+image_filename: '{{site.url}}/img/hero-2.jpg'
 name: "First Student"
 tags:
   - students
