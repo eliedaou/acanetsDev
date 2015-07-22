@@ -15,7 +15,7 @@ byline: Student 1
     <h3> Students </h3>
     <ul class="resource-list video-list">
     {% for student in site.tags.students %}
-      <li class="half resource video">
+      <li class="half resource video" style="margin:0px 0px">
           <div class="third">
               <img src="{{ site.url }}/img/{{ student.image_filename }}" alt="{{ student.title }}">
           </div>
@@ -28,14 +28,16 @@ byline: Student 1
     </ul>
 
     <!-- go back button -->
-    <ul>
-      <li class="current">
-        <a href="../">Go back to full list</a>
-      </li>
-      <li>
-        <span style="opacity:0">.</span>
-      </li>
-    </ul>
+    <nav>
+      <ul>
+        <li class="current">
+          <a href="../"> &larr; Go back to full list</a>
+        </li>
+        <li>
+          <span style="opacity:0">.</span>
+        </li>
+      </ul>
+    </nav>
 
   </div>
 </div>
