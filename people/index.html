@@ -40,7 +40,7 @@ body_class: people
               <img src="{{ site.url }}/img/{{ phdstudent.image_filename }}" alt="{{ phdstudent.title }}">
           </div>
           <div class="two-thirds">
-            <h3> {{ phdstudent.name}} </h3>
+            <h3> <a href=" {{ phdstudent.myURL }} ">{{ phdstudent.name}} </a></h3>
             <p> {{ phdstudent.the_discription}} </p>
           </div>
         </div>
@@ -57,7 +57,7 @@ body_class: people
               <img src="{{ site.url }}/img/{{ student.image_filename }}" alt="{{ student.title }}">
           </div>
           <div class="two-thirds">
-            <h3> {{ student.name}}</h3>
+            <h3><a href=" {{ student.myURL }} "> {{ student.name}} </a></h3>
             <p> {{ student.the_discription }} </p>
           </div>
       </li>

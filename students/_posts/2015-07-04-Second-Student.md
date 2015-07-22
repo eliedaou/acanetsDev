@@ -4,5 +4,5 @@ tags:
   - people
 the_description: "This is a description of \"student2\". This are all variables that can be easily changed without touching the static html file."
 title: "Second Student"
-url: "{{site.url}}/research/publications"
+myURL: "{{site.url}}/research/publications"
 ---

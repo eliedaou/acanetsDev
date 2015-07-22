@@ -5,5 +5,5 @@ tags:
   - people
   - rss
 the_description: "This is a description of \"student1\" which is set to nothing, for the time being."
-url: "{{site.url}}/research/publications"
+myURL: "{{site.url}}/research/publications"
 ---
