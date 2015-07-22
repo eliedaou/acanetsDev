@@ -1,34 +1,19 @@
 ---
-layout: people
+layout: singlePerson
 body_class: people
 byline: Professor1 Yan Luo
 people_overview: false
 ---
 
+{% assign thisProfessor = site.tags.professor1 %}
+
 <div class="container">
   <div class="content">
     <div class="section-description">
-      <h2>People</h2>
-      <p>We are these people</p>
+      <img src="{{ thisProfessor.image_filename }}" />
+      <h2>{{ thisProfessor.name }}</h2>
+
+      <p> {{ thisProfessor.the_description }} </p>
     </div>
-
-    <!-- professor stuff -->
-    <h3> Professor </h3>
-    <ul class="resource-list video-list">
-      {% for professor in site.tags.professors %}
-      <li class="resource video">
-        <div class="container">
-          <div class="third">
-              <img src="{{ site.url }}/img/{{ professor.image_filename }}" alt="{{ professor.title }}">
-          </div>
-          <div class="two-thirds">
-            <h3><a href="{{ professor.myURL }}"> {{ professor.name }}</a></h3>
-            <p> {{professor.the_description}} </p>
-          </div>
-        </div>
-      </li>
-      {% endfor %}
-    </ul>
-
   </div>
 </div>

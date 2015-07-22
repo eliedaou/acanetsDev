@@ -1,32 +1,19 @@
 ---
-layout: people
+layout: singlePerson
 body_class: people
 byline: Student 2
 people_overview: false
 ---
 
+{% assign thisStudent = site.tags.student2%}
+
 <div class="container">
   <div class="content">
     <div class="section-description">
-      <h2>People</h2>
-      <p>We are these people</p>
+      <img src="{{ thisStudent.image_filename }}" />
+      <h2>{{ thisStudent.name }}</h2>
+
+      <p> {{ thisStudent.the_description }} </p>
     </div>
-
-        <!-- regular student stuff -->
-    <h3> Students </h3>
-    <ul class="resource-list video-list">
-    {% for student in site.tags.students %}
-      <li class="half resource video" style="margin:0px 0px">
-          <div class="third">
-              <img src="{{ site.url }}/img/{{ student.image_filename }}" alt="{{ student.title }}">
-          </div>
-          <div class="two-thirds">
-            <h3><a href=" {{ student.myURL }} "> {{ student.name}} </a></h3>
-            <p> {{ student.the_description }} </p>
-          </div>
-      </li>
-    {% endfor %}
-    </ul>
-
   </div>
 </div>
