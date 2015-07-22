@@ -1,5 +1,5 @@
 ---
-image_filename: '{{site.url}}/img/yan_luo_2007.jpg'
+image_filename: yan_luo_2007.jpg
 name: "Yan Luo"
 tags:
   - professors

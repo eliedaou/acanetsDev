@@ -6,16 +6,14 @@ people_overview: false
 ---
 
 {% for thisProfessor in site.tags.professor1 %}
-
 <div class="container">
   <div class="content">
     <div class="section-description">
-      <img src="{{ thisProfessor.image_filename }}" />
+      <img src="{{ site.url }}/img/{{ thisProfessor.image_filename }}" />
       <h2>{{ thisProfessor.name }}</h2>
-
+      <br />
       <p> {{ thisProfessor.the_description }} </p>
     </div>
   </div>
 </div>
-
 {% endfor %}

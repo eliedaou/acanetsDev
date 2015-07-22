@@ -5,15 +5,13 @@ byline: Student 1
 people_overview: false
 ---
 
-{% assign thisStudent = site.tags.student1%}
-
 {% for thisStudent in site.tags.student1 %}
 <div class="container">
   <div class="content">
     <div class="section-description">
-      <img src="{{ thisStudent.image_filename }}" />
+      <img src="{{ site.url }}/img/{{ thisStudent.image_filename }}" />
       <h2>{{ thisStudent.name }}</h2>
-
+      <br />
       <p> {{ thisStudent.the_description }} </p>
     </div>
   </div>
