@@ -50,8 +50,8 @@ body_class: people
     <h3> Students </h3>
     <ul class="resource-list video-list">
     {% for student in site.tags.students %}
-      <li class="resource video">
-          <div class="half">
+      <li <!-- class="resource video" -->>
+          <div class="half resource video">
             <div class="third">
                 <img src="{{ site.url }}/img/{{ student.image_filename }}" alt="{{ student.title }}">
             </div>
