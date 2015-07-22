@@ -5,6 +5,6 @@ tags:
   - professors
   - rss
 the_description: "This is a description of \"professor1\" which is set to Professor Yan Luo."
-myURL: "{{site.myURL}}/research"
+myURL: '{{site.url}}/research'
 
 ---

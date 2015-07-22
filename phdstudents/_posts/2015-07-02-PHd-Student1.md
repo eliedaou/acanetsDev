@@ -5,5 +5,5 @@ tags:
   - PHdStudent
   - rss
 the_description: "This is a description of \"phdstu1\" which is set to some generic name in the meantime"
-myURL: "{{site.url}}/people"
+myURL: ' {{site.url}}/people '
 ---
