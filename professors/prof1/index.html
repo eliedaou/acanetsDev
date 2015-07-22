@@ -1,6 +1,7 @@
 ---
 layout: people
 body_class: people
+byline: Professor1 Yan Luo
 ---
 
 <div class="container">
@@ -28,38 +29,15 @@ body_class: people
       {% endfor %}
     </ul>
 
-    <!-- phdstudent stuff -->
-    <h3> PHd Students </h3>
-    <ul class="resource-list video-list">
-      {% for phdstudent in site.tags.phdstudents %}
-      <li class="resource video">
-        <div class="container">
-          <div class="third">
-              <img src="{{ site.url }}/img/{{ phdstudent.image_filename }}" alt="{{ phdstudent.title }}">
-          </div>
-          <div class="two-thirds">
-            <h3> <a href=" {{ phdstudent.myURL }} ">{{ phdstudent.name}} </a></h3>
-            <p> {{ phdstudent.the_description}} </p>
-          </div>
-        </div>
+    <!-- go back button -->
+    <ul>
+      <li class="current">
+        <a href="../">Go back to full list</a>
       </li>
-      {% endfor %}
+      <li>
+        <span style="opacity:0">.</span>
+      </li>
     </ul>
 
-    <!-- regular student stuff -->
-    <h3> Students </h3>
-    <ul class="resource-list video-list">
-    {% for student in site.tags.students %}
-      <li class="half resource video">
-          <div class="third">
-              <img src="{{ site.url }}/img/{{ student.image_filename }}" alt="{{ student.title }}">
-          </div>
-          <div class="two-thirds">
-            <h3><a href=" {{ student.myURL }} "> {{ student.name}} </a></h3>
-            <p> {{ student.the_description }} </p>
-          </div>
-      </li>
-    {% endfor %}
-    </ul>
   </div>
 </div>
