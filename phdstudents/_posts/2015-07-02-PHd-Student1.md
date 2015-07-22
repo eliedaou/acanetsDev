@@ -4,6 +4,7 @@ name: "PHd Student1"
 tags:
   - phdstudents
   - phdstudent1
-the_description: "This is a description of \"phdstu1\" which is set to some generic name in the meantime"
+the_description: "This is the full, in depth description of \"phdstu1\" which is set to some a placeholder name in the meantime. This is all easily duplicated."
+excerpt: "This is a short excerpt about PHd student 1."
 myURL: ' ../phdstudents/phdstu1 '
 ---
