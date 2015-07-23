@@ -1,0 +1,10 @@
+---
+image_filename: elie_may_2015.jpg
+tags:
+  - students
+  - student4
+the_description: "This is a description of Elie Daou. I'm eventually going to be on there might as well now."
+excerpt: "This is a short excerpt about Elie."
+name: "Elie Daou"
+myURL: 'acanets.uml.edu/~edaou'
+---
