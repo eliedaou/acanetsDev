@@ -6,4 +6,18 @@ html_title: Projects
 
 <div class="container">
   {{ content }}
+
+  {% if title != 'Ongoing Research at Acanets' %}
+    <div class="subpage-list">
+      <ul>
+        <li class="current">
+          <a href="{{site.url}}/research"> &larr; Go back to full list</a>
+        </li>
+        <li>
+          <span style="opacity:0">.</span>
+        </li>
+      </ul>
+    </div>
+  {% endif %}
+
 </div>
