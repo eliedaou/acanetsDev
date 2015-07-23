@@ -52,8 +52,8 @@ body_class: people
 
     <ul class="resource-list video-list">
     {% for student in site.tags.students %}
-      <li class="half resource video" style="display:inline">
-      <!--   <div class="resource video"> -->
+      <li class="half" style="display:inline">
+        <div class="resource container">
           <div class="third">
               <img src="{{ site.url }}/img/{{ student.image_filename }}" alt="{{ student.title }}">
           </div>
@@ -61,7 +61,8 @@ body_class: people
             <h3><a href=" {{ student.myURL }} "> {{ student.name}} </a></h3>
             <p> {{ student.excerpt }} </p>
           </div>
-        <!-- </div> -->
+         </div>
+
       </li>
     {% endfor %}
 
