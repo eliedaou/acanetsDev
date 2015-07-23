@@ -17,7 +17,7 @@ body_class: people
       <li class="resource video">
         <div class="container">
           <div class="third">
-              <img src="{{ site.url }}/img/{{ professor.image_filename }}" alt="{{ professor.title }}">
+              <img src="{{ site.url }}/img/{{ professor.image_filename }}" alt="{{ professor.title }}" style="width:160px">
           </div>
           <div class="two-thirds">
             <h3><a href="{{ professor.myURL }}"> {{ professor.name }}</a></h3>
@@ -36,7 +36,7 @@ body_class: people
       <li class="resource video">
         <div class="container">
           <div class="third">
-              <img src="{{ site.url }}/img/{{ phdstudent.image_filename }}" alt="{{ phdstudent.title }}">
+              <img src="{{ site.url }}/img/{{ phdstudent.image_filename }}" alt="{{ phdstudent.title }}" style="width:160px">
           </div>
           <div class="two-thirds">
             <h3> <a href=" {{ phdstudent.myURL }} ">{{ phdstudent.name}} </a></h3>
@@ -50,12 +50,13 @@ body_class: people
     <!-- regular student stuff -->
     <h3> Students </h3>
 
+
     {% for student in site.tags.students %}
     <ul class="resource-list video-list">
-      <li>
-          <div class="half resource video">
+      <li class="half resource video">
+          <div class="container">
             <div class="third">
-                <img src="{{ site.url }}/img/{{ student.image_filename }}" alt="{{ student.title }}">
+                <img src="{{ site.url }}/img/{{ student.image_filename }}" alt="{{ student.title }}" style="width:160px">
             </div>
             <div class="two-thirds">
               <h3><a href=" {{ student.myURL }} "> {{ student.name}} </a></h3>
@@ -63,9 +64,8 @@ body_class: people
             </div>
           </div>
       </li>
-    </ul>
+      </ul>
     {% endfor %}
-
 
   </div>
 </div>
