@@ -27,12 +27,12 @@ body_class: people
       </li>
       {% endfor %}
     </ul>
-
+    <br />
     <!-- phdstudent stuff -->
     <h3> PHd Students </h3>
 
-    {% for phdstudent in site.tags.phdstudents %}
     <ul class="resource-list video-list">
+    {% for phdstudent in site.tags.phdstudents %}
       <li class="resource video">
         <div class="container">
           <div class="third">
@@ -44,13 +44,14 @@ body_class: people
           </div>
         </div>
       </li>
+    {% endfor %}
     </ul>
-      {% endfor %}
-
+    <br />
     <!-- regular student stuff -->
     <h3> Students </h3>
-    <ul class="resource-list video-list">
+
     {% for student in site.tags.students %}
+    <ul class="resource-list video-list">
       <li>
           <div class="half resource video">
             <div class="third">
@@ -62,7 +63,9 @@ body_class: people
             </div>
           </div>
       </li>
-    {% endfor %}
     </ul>
+    {% endfor %}
+
+
   </div>
 </div>
