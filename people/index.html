@@ -30,8 +30,9 @@ body_class: people
 
     <!-- phdstudent stuff -->
     <h3> PHd Students </h3>
+
+    {% for phdstudent in site.tags.phdstudents %}
     <ul class="resource-list video-list">
-      {% for phdstudent in site.tags.phdstudents %}
       <li class="resource video">
         <div class="container">
           <div class="third">
@@ -43,8 +44,8 @@ body_class: people
           </div>
         </div>
       </li>
-      {% endfor %}
     </ul>
+      {% endfor %}
 
     <!-- regular student stuff -->
     <h3> Students </h3>
