@@ -50,9 +50,8 @@ body_class: people
     <!-- regular student stuff -->
     <h3> Students </h3>
 
-
-    {% for student in site.tags.students %}
     <ul class="resource-list video-list">
+    {% for student in site.tags.students %}
       <li class="half resource video">
           <div class="container">
             <div class="third">
@@ -64,8 +63,7 @@ body_class: people
             </div>
           </div>
       </li>
-      </ul>
     {% endfor %}
-
+    </ul>
   </div>
 </div>
