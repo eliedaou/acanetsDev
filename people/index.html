@@ -5,10 +5,6 @@ body_class: people
 
 <div class="container">
   <div class="content">
-    <div class="section-description">
-      <h2>People</h2>
-      <p>We are these people</p>
-    </div>
 
     <!-- professor stuff -->
     <h3> Professor </h3>
@@ -33,13 +29,13 @@ body_class: people
 
     <ul class="resource-list video-list">
     {% for phdstudent in site.tags.phdstudents %}
-      <li class="resource">
-        <div class="container">
+      <li class="half" style="display:inline">
+        <div class="resource container">
           <div class="third">
               <img src="{{ site.url }}/img/{{ phdstudent.image_filename }}" alt="{{ phdstudent.title }}" style="width:160px">
           </div>
           <div class="two-thirds">
-            <h3> <a href=" {{ phdstudent.myURL }}" target="_blank">{{ phdstudent.name}}'s website </a></h3>
+            <h3> <a href=" {{ phdstudent.myURL }}" target="_blank">{{ phdstudent.name}} </a></h3>
             <p> {{ phdstudent.excerpt}} </p>
           </div>
         </div>
@@ -58,16 +54,17 @@ body_class: people
               <img src="{{ site.url }}/img/{{ msstudent.image_filename }}" alt="{{ msstudent.title }}">
           </div>
           <div class="two-thirds">
-            <h3> <a href=" {{ msstudent.myURL }}" target="_blank">{{ msstudent.name}}'s website </a></h3>
+            <h3> <a href=" {{ msstudent.myURL }}" target="_blank">{{ msstudent.name}} </a></h3>
             <p> {{ msstudent.excerpt}} </p>
           </div>
         </div>
       </li>
     {% endfor %}
     </ul>
+
     <br />
     <br />
-    
+
     <h3> Undergraduate Students </h3>
 
     <ul class="resource-list video-list">
@@ -78,20 +75,22 @@ body_class: people
               <img src="{{ site.url }}/img/{{ student.image_filename }}" alt="{{ student.title }}">
           </div>
           <div class="two-thirds">
-            <h3><a href=" {{ student.myURL }}" target="_blank"> {{student.name}}'s website </a></h3>
+            <h3><a href=" {{ student.myURL }}" target="_blank"> {{student.name}}</a></h3>
             <p> {{ student.excerpt }} </p>
           </div>
          </div>
 
       </li>
     {% endfor %}
-
     </ul>
 
-    <h3> Alumni </h3>
-      <ul>
-	<li> Philip Colangelo, MS 2014, BAE Systems </li>
+    <br />
 
-      </ul>
+    <div class="container">
+      <h3> Alumni </h3>
+        <ul>
+  	       <li> Philip Colangelo, MS 2014, BAE Systems </li>
+        </ul>
+    </div>
   </div>
 </div>

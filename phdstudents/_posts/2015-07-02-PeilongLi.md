@@ -5,6 +5,6 @@ tags:
   - phdstudents
   - phdstudent3
 the_description: "ll out information"
-excerpt: "This is a short excerpt about PHd student Peilong Li."
+excerpt: "This is a short excerpt about PhD student Peilong Li."
 myURL: ' /~pli '
 ---
