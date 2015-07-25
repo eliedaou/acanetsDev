@@ -6,5 +6,5 @@ tags:
   - msstudent2
 the_description: "Fill out information"
 excerpt: "This is a short excerpt about M.S. student Vasudev Deshpande."
-myURL: ' /~vdephande '
+myURL: ' /~vdeshpande '
 ---
