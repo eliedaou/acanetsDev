@@ -50,6 +50,22 @@ body_class: people
     <!-- regular student stuff -->
 
     <h3> Masters Students </h3>
+    <ul class="resource-list video-list">
+    {% for msstudent in site.tags.msstudents %}
+      <li class="half" style="display:inline">
+        <div class="resource container">
+          <div class="third">
+              <img src="{{ site.url }}/img/{{ msstudent.image_filename }}" alt="{{ msstudent.title }}">
+          </div>
+          <div class="two-thirds">
+            <h3> <a href=" {{ msstudent.myURL }}" target="_blank">{{ msstudent.name}}'s website </a></h3>
+            <p> {{ msstudent.excerpt}} </p>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+    <br />
 
     <h3> Undergraduate Students </h3>
 

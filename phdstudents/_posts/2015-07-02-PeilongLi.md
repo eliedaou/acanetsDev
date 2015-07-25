@@ -3,8 +3,8 @@ image_filename: hero-1.jpg
 name: "Peilong Li"
 tags:
   - phdstudents
-  - phdstudent1
-the_description: "This is the full, in depth description of \"phdstu1\" which is set to some a placeholder name in the meantime. This is all easily duplicated."
-excerpt: "This is a short excerpt about PHd student 1."
-myURL: ' ../phdstudents/phdstu1 '
+  - phdstudent3
+the_description: "ll out information"
+excerpt: "This is a short excerpt about PHd student Peilong Li."
+myURL: ' /~pli '
 ---
