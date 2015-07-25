@@ -24,67 +24,68 @@ body_class: people
       {% endfor %}
     </ul>
     <br />
-    <!-- phdstudent stuff -->
-    <h3> PhD Students </h3>
 
-    <ul class="resource-list video-list">
-    {% for phdstudent in site.tags.phdstudents %}
-      <li class="half" style="display:inline">
-        <div class="resource container">
-          <div class="third">
-              <img src="{{ site.url }}/img/{{ phdstudent.image_filename }}" alt="{{ phdstudent.title }}" style="width:160px">
+    <div class="container">
+      <!-- phdstudent stuff -->
+      <h3> PhD Students </h3>
+      <ul class="resource-list video-list">
+      {% for phdstudent in site.tags.phdstudents %}
+        <li class="half" style="display:inline">
+          <div class="resource container">
+            <div class="third">
+                <img src="{{ site.url }}/img/{{ phdstudent.image_filename }}" alt="{{ phdstudent.title }}">
+            </div>
+            <div class="two-thirds">
+              <h3> <a href=" {{ phdstudent.myURL }}" target="_blank">{{ phdstudent.name}} </a></h3>
+              <p> {{ phdstudent.excerpt}} </p>
+            </div>
           </div>
-          <div class="two-thirds">
-            <h3> <a href=" {{ phdstudent.myURL }}" target="_blank">{{ phdstudent.name}} </a></h3>
-            <p> {{ phdstudent.excerpt}} </p>
+        </li>
+      {% endfor %}
+      </ul>
+      <br />
+    </div>
+    <div class="container">
+      <!-- masters student stuff -->
+      <h3> Masters Students </h3>
+      <ul class="resource-list video-list">
+      {% for msstudent in site.tags.msstudents %}
+        <li class="half" style="display:inline">
+          <div class="resource container">
+            <div class="third">
+                <img src="{{ site.url }}/img/{{ msstudent.image_filename }}" alt="{{ msstudent.title }}">
+            </div>
+            <div class="two-thirds">
+              <h3> <a href=" {{ msstudent.myURL }}" target="_blank">{{ msstudent.name}} </a></h3>
+              <p> {{ msstudent.excerpt}} </p>
+            </div>
           </div>
-        </div>
-      </li>
-    {% endfor %}
-    </ul>
-    <br />
-    <!-- regular student stuff -->
+        </li>
+      {% endfor %}
+      </ul>
+      <br />
+    </div>
 
-    <h3> Masters Students </h3>
-    <ul class="resource-list video-list">
-    {% for msstudent in site.tags.msstudents %}
-      <li class="half" style="display:inline">
-        <div class="resource container">
-          <div class="third">
-              <img src="{{ site.url }}/img/{{ msstudent.image_filename }}" alt="{{ msstudent.title }}">
-          </div>
-          <div class="two-thirds">
-            <h3> <a href=" {{ msstudent.myURL }}" target="_blank">{{ msstudent.name}} </a></h3>
-            <p> {{ msstudent.excerpt}} </p>
-          </div>
-        </div>
-      </li>
-    {% endfor %}
-    </ul>
-
-    <br />
-    <br />
-
-    <h3> Undergraduate Students </h3>
-
-    <ul class="resource-list video-list">
-    {% for student in site.tags.students %}
-      <li class="half" style="display:inline">
-        <div class="resource container">
-          <div class="third">
-              <img src="{{ site.url }}/img/{{ student.image_filename }}" alt="{{ student.title }}">
-          </div>
-          <div class="two-thirds">
-            <h3><a href=" {{ student.myURL }}" target="_blank"> {{student.name}}</a></h3>
-            <p> {{ student.excerpt }} </p>
-          </div>
-         </div>
-
-      </li>
-    {% endfor %}
-    </ul>
-
-    <br />
+    <div class="container">
+      <!-- undergraduate students -->
+      <h3> Undergraduate Students </h3>
+      <ul class="resource-list video-list">
+      {% for student in site.tags.students %}
+        <li class="half" style="display:inline">
+          <div class="resource container">
+            <div class="third">
+                <img src="{{ site.url }}/img/{{ student.image_filename }}" alt="{{ student.title }}">
+            </div>
+            <div class="two-thirds">
+              <h3><a href=" {{ student.myURL }}" target="_blank"> {{student.name}}</a></h3>
+              <p> {{ student.excerpt }} </p>
+            </div>
+           </div>
+        </li>
+      {% endfor %}
+      </ul>
+      <br />
+    </div>
 
     <div class="container">
       <h3> Alumni </h3>
