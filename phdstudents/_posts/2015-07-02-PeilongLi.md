@@ -1,6 +1,6 @@
 ---
 image_filename: hero-1.jpg
-name: "PHd Student1"
+name: "Peilong Li"
 tags:
   - phdstudents
   - phdstudent1
