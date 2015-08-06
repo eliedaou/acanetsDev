@@ -30,7 +30,7 @@ body_class: people
       <h3> PhD Students </h3>
       <ul class="resource-list video-list">
       {% for phdstudent in site.tags.phdstudents %}
-        <li class="half" style="display:inline; margin-bottom:4px">
+        <li class="half" style="display:inline; margin-bottom:7px">
           <div class="resource container">
             <div class="third">
                 <img src="{{ site.url }}/img/{{ phdstudent.image_filename }}" alt="{{ phdstudent.title }}">
@@ -50,7 +50,7 @@ body_class: people
       <h3> Masters Students </h3>
       <ul class="resource-list video-list">
       {% for msstudent in site.tags.msstudents %}
-        <li class="half" style="display:inline">
+        <li class="half" style="display:inline margin-bottom:7px">
           <div class="resource container">
             <div class="third">
                 <img src="{{ site.url }}/img/{{ msstudent.image_filename }}" alt="{{ msstudent.title }}">
@@ -71,7 +71,7 @@ body_class: people
       <h3> Undergraduate Students </h3>
       <ul class="resource-list video-list">
       {% for student in site.tags.students %}
-        <li class="half" style="display:inline">
+        <li class="half" style="display:inline margin-bottom:7px">
           <div class="resource container">
             <div class="third">
                 <img src="{{ site.url }}/img/{{ student.image_filename }}" alt="{{ student.title }}">
