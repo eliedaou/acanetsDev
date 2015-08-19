@@ -1,9 +1,15 @@
 ---
 the_title: Heterospark
-the_date: Aug 8, 2014
-the_description: Heterospark is a research thing that's happening. Click to find out more
-extra_description: We initiate network commands such as ping and nslookup to measure the end-to-end delay and DNS lookup time. We also use file transfers to estimate upload and download bandwidth between clients and “CDN” servers. We plan to conduct these measurements continuously for six months, during which such network metrics are recorded along them their timestamps. In this way, we will obtain a large set of time series data, which essentially tell us the network performance in multiple dimensional (time, geographic, organization, ISP, KPI) representation.
-sponsor_url: http://www.hugedata.com.cn/
+the_date: "Aug 8, 2014"
+the_description: "HeteroSpark clusters can be regarded as Spark clusters with GPUs connected within some or all of Spark worker nodes. Figure 1 gives the overview of the HeteroSpark architecture. Basically, HeteroSpark extends original Spark with GPU acceleration option on Spark worker nodes. HeteroSpark currently supports three ways to connect GPUs with Spark workers: “local GPU” (GPU resides on the same Spark worker machine and interacts with the CPU via the PCIe bus), “remote GPU” (GPU resides on different Spark worker over the net- work), or “no GPU”. All GPU enable/disable and connection options are configured in the cluster configuration file which is read on starting."
+sponsor_url: "http://www.hugedata.com.cn/"
 the_url: ../heterospark/
-tags: ['projects', 'rss']
+tags:
+  - projects
+  - rss
+  - heterospark
+introduction1: "&bull; Recent research advance in machine learning / deep learning algorithms and data analytics tools imposes new requirements on existing computing systems and architectures. Machine learning algorithms such as singular vector decomposition (SVD), support vector machine (SVM), principal component analysis (PCA), clustering, and neural networks are applied to extremely large data sets to extract data information and build a knowledge base. New deep learning algorithms such as autoencoder, RBM, both computing and memory intensive, have become infeasible because of the scale of data."
+introduction2: " &bull;Distributed computing platform such as Hadoop and Spark are invented to address ‘big data’ problems. However, the complex algorithms applied on the data unit in a single node still consume a large number of CPU cycles."
+introduction3: "In the latest technology, GPUs have been leveraged as accelerators in speeding up complex workloads thanks to the density of the cores and their power efficiency."
+
 ---
