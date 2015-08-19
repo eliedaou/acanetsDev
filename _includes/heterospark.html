@@ -1,10 +1,10 @@
 <a href=" {{ site.pdfLink }} ">with link to PDFs</a>
-<h3>
-  Introduction
-</h3>
+{% for project in site.tags.heterospark %}
 
-<p>
-  {% for project in site.tags.heterospark %}
-    {{ project.introduction }}
-  {% endfor %}
-</p>
+  <h3> Introduction </h3>
+  <p> {{ project.introduction }} </p>
+
+  <h3> Motivation </h3>
+  <p> {{ project.motivation }} </p>
+
+{% endfor %}
