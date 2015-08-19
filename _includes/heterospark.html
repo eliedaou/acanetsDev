@@ -4,5 +4,7 @@
 </h3>
 
 <p>
-  {{ site.tags.heterospark.introduction }}
+  {% for project in site.tags.heterospark %}
+    {{ project.introduction }}
+  {% endfor %}
 </p>
