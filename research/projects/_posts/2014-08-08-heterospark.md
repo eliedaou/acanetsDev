@@ -18,5 +18,5 @@ currentStatus: "<h3> Current Status</h3>
 <li>Developing JNI wrapper automator by using Swig.</li>
 <li>Working on a list of machine learning algorithms.</li>
 </ol>"
-
+downloads: "<h3>Downloads:</h3> <em>Coming soon </em>"
 ---
