@@ -1,5 +1,5 @@
 ---
-image_filename: hero-1.jpg
+image_filename: no-user-image.gif
 name: "Swaroop Thool"
 tags:
   - msstudents
