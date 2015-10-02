@@ -30,7 +30,7 @@ body_class: people
       <h3> PhD Students </h3>
       <ul class="resource-list video-list">
       {% for phdstudent in site.tags.phdstudents %}
-        <li class="half" style="display:inline; margin-bottom:7px">
+        <li class="half" style="display:inline; float:left; margin-bottom:7px">
           <div class="resource container">
             <div class="third">
                 <img src="{{ site.url }}/img/{{ phdstudent.image_filename }}" alt="{{ phdstudent.title }}">
