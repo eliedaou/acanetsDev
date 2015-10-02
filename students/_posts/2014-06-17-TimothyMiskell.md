@@ -1,5 +1,5 @@
 ---
-image_filename: timothy_miskell.jpg
+image_filename: "timothy_miskell.jpg"
 name: "Timothy Miskell"
 tags:
   - students
