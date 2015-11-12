@@ -1,7 +1,7 @@
 ---
 the_title: Heterospark
 the_date: "Aug 8, 2014"
-the_description: "HeteroSpark clusters can be regarded as Spark clusters with GPUs connected within some or all of Spark worker nodes. HeteroSpark extends original Spark with GPU acceleration option on Spark worker nodes. HeteroSpark currently supports three ways to connect GPUs with Spark workers: “local GPU”, “remote GPU”, or “no GPU”. All GPU enable/disable and connection options are configured in the cluster configuration file which is read on starting."
+the_description: "HeterSpark is to extend the big data computing framework Spark on to GPUs to accelerate complex workloads"
 sponsor_url: "http://www.hugedata.com.cn/"
 the_url: ../heterospark/
 tags:
