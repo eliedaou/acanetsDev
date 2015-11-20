@@ -1,0 +1,7 @@
+<!-- <a href=" {{ site.pdfLink }} ">with link to PDFs</a> -->
+{% for project in site.tags.streams %}
+  {{ project.PI }}
+  {{ project.introduction }}
+  {{ project.intellectualMerits }}
+  {{ project.broaderImpact }}
+{% endfor %}
