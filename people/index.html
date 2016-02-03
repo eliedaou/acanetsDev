@@ -28,10 +28,12 @@ body_class: people
     <div class="container">
       <!-- phdstudent stuff -->
       <h3> PhD Students </h3>
+      {% assign currentRow = 0 %}
       {% for phdstudent in site.tags.phdstudents %}
-      {% if {{forloop.index}} % 2 == 0 %}
+      {% if {{forloop.index}} == 2 * currentRow %}
         {% if {{forloop.index}} != 0 %}</ul>{% endif %}
         <ul class="resource-list video-list">
+          {% assign currentRow = currentRow + 1 %}
         {% endif %}
 
         <li class="half" style="display:inline; float:left; margin-bottom:7px">
