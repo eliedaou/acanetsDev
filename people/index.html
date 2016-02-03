@@ -28,8 +28,12 @@ body_class: people
     <div class="container">
       <!-- phdstudent stuff -->
       <h3> PhD Students </h3>
-      <ul class="resource-list video-list">
       {% for phdstudent in site.tags.phdstudents %}
+      {% if {{forloop.index}} % 2 == 0 %}
+        {% if {{forloop.index}} != 0 %}</ul>{% endif %}
+        <ul class="resource-list video-list">
+        {% endif %}
+
         <li class="half" style="display:inline; float:left; margin-bottom:7px">
           <div class="resource container">
             <div class="third">
@@ -42,7 +46,6 @@ body_class: people
           </div>
         </li>
       {% endfor %}
-      </ul>
       <br />
     </div>
     <div class="container">
@@ -50,7 +53,7 @@ body_class: people
       <h3> Masters Students </h3>
       <ul class="resource-list video-list">
       {% for msstudent in site.tags.msstudents %}
-        <li class="half" style="display:inline margin-bottom:7px">
+        <li class="half" style="display:inline; margin-bottom:7px">
           <div class="resource container">
             <div class="third">
                 <img src="{{ site.url }}/img/{{ msstudent.image_filename }}" alt="{{ msstudent.title }}">
