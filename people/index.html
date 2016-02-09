@@ -28,15 +28,15 @@ body_class: people
     <div class="container">
       <!-- phdstudent stuff -->
       <h3> PhD Students </h3>
-      {% assign currentRow = 0 %}
+      <!-- {% assign currentRow = 0 %} -->
+      <ul class="resource-list video-list">
       {% for phdstudent in site.tags.phdstudents %}
-      {% if {{forloop.index}} == 2 * currentRow %}
+      <!-- {% if {{forloop.index}} == 2 * currentRow %}
         {% if {{forloop.index}} != 0 %}</ul>{% endif %}
         <ul class="resource-list video-list">
           {% assign currentRow = currentRow + 1 %}
-        {% endif %}
-
-        <li class="half" style="display:inline; float:left; margin-bottom:7px">
+        {% endif %} -->
+        <li class="half" style="display:inline; margin-bottom:7px">
           <div class="resource container">
             <div class="third">
                 <img src="{{ site.url }}/img/{{ phdstudent.image_filename }}" alt="{{ phdstudent.title }}">
@@ -48,6 +48,7 @@ body_class: people
           </div>
         </li>
       {% endfor %}
+      </ul>
       <br />
     </div>
     <div class="container">
